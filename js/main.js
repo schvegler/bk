@@ -6,3 +6,15 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
         nav.style.display = 'block';
     }
 });
+    
+
+document.addEventListener("DOMContentLoaded", function() {
+     $('#thx').hide();
+});
+
+$('#gform').on('submit', function(e) {
+  $('#gform').hide();
+    $('#thx').show();
+
+    //$('#gform').prepend('Your submission has been processed...');
+  });

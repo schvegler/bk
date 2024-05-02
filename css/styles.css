@@ -5,6 +5,36 @@
     padding: 0;
 }
 
+#promo{
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center; /* Center content horizontally */
+    height: 400px;
+}
+
+.hero{
+    position: relative;
+    background-image: url(/img/CampingSite.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+    margin-bottom: 20px;
+}
+
+.hero h3, h1, a{
+    text-shadow: none;
+
+    color: white;
+    padding: 10px;
+    font-family: serif;
+}
+
+.hero h1 {
+    color: whitesmoke;
+    font-size: 3em;
+}
+
 body, html {
     font-family: 'Arial', sans-serif;
     width: 100%;
@@ -46,7 +76,6 @@ header {
 
 /* Main Content */
 main {
-    padding: 20px;
     text-align: center;
 }
 
@@ -62,25 +91,52 @@ main {
     display: inline-block;
 }
 
+.subscription {
+    
+    margin: 40px;
+}
+
+.subscription h2 {
+    color: #ecc97f;
+    font-size: 3em;
+    
+}
+
+.subscription h3 {
+    color: #229ebc;
+    font-size: 1em;
+    
+}
+
 /* Subscription Form */
-.subscription-form input[type="email"] {
+.subscription input {
+    font-size: 1em;
     padding: 0.8rem;
-    margin-right: 0.5rem;
+    border: 2px solid #229ebc; /* Green border */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.subscription p {
+    font-size: 14px;
+    color: #229ebc;
 }
 
 .btn-submit {
-    background-color: darkgreen;
+    font-size: 1em;
+    background-color: #ecc97f;
     color: white;
     border: none;
     padding: 0.8rem 1.2rem;
+    border-radius: 4px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #222;
-    color: white;
+    color: #ecc97f;
 }
 
 @media (max-width: 768px) {
@@ -93,34 +149,98 @@ footer {
     }
 }
 
-/* Game Features Sections */
-.game-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
 .feature {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    
 }
 
-.feature img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+.feature div {
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
 }
 
-.feature h3 {
-    color: #333;
+.feature .img {
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 49%;
+ 
 }
+
+.f1 {
+     background: #229ebc;
+}
+
+.f1 .img{
+        background-image: url(/img/BK_MoveHitImg.jpg);
+
+}
+
+.f2 {
+     background: #ecc97f;
+}
+
+.f2 .img {
+        background-image: url(/img/Barracks.png);
+}
+
+.f3 {
+    background: #229ebc;
+}
+
+.f3 .img {
+        background-image: url(/img/TrainFootmanCut.jpg);
+        background-position: top center;
+}
+
+.f4 {
+    background: #ecc97f;
+}
+
+.f4 .img {
+    background-image: url(/img/LevelUp.png);
+}
+
+.f5 {
+     background: #229ebc;
+}
+ 
+.f5 .img {
+    background-image: url(/img/Shop.png);
+}
+
+.feature .text {
+    width: 49%;
+    color:azure;
+}
+
+
 
 @media (max-width: 768px) {
     .game-features {
         grid-template-columns: 1fr;
+    }
+    .feature {
+        flex-direction:column;
+    }
+    .feature .img  {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .feature .text {
+        width: 80%;
+        margin: auto;
     }
 }

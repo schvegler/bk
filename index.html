@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src=js/jquery.min.js></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the immersive world of Broken Kingdom, an action RPG that redefines mobile gaming.">
@@ -12,12 +13,12 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="Studio Logo">
+            <img src="img/BrokenKingdomSwordHammerLogo.png" alt="Studio Logo">
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
+               <!-- <li><a href="blog.html">Blog</a></li> -->
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -26,56 +27,100 @@
     </header>
 
 <main>
-    <section class="hero">
-        <h1>Embark on Epic Adventures in Broken Kingdom</h1>
-        <p>Explore the rich and detailed world of Broken Kingdom.</p>
-        <a href="games.html" class="btn-primary">Discover Our Games</a>
+    <section id="promo">
+        <div class="hero">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Welcome to the</h3>
+             <h1>Broken Kingdom</h1>
+        </div>
     </section>
 
     <!-- Game Features Sections -->
     <div class="game-features">
-        <div class="feature">
-            <img src="img/feature1.jpg" alt="Dynamic Combat">
+        <div class="feature f1">
+            <div class="img">
+            </div>
+            
+            <div class="text">
             <h3>Dynamic Combat</h3>
-            <p>Engage in fast-paced, strategic battles with innovative gameplay mechanics.</p>
+            <br>
+            <p>Embark on an epic journey in Broken Kingdom, a mobile action RPG with easy-to-master controls and full RPG features. Explore the mystical world of Tyrinth, engage in thrilling battles, and uncover all the secrets with just one finger. Dive into a rich RPG adventure, perfectly suited for mobile gaming.</p>
+            </div>  
         </div>
-        <div class="feature">
-            <img src="img/feature2.jpg" alt="Expansive Worlds">
-            <h3>Expansive Worlds</h3>
-            <p>Explore vast, beautiful landscapes filled with hidden secrets and new challenges.</p>
-        </div>
-        <div class="feature">
-            <img src="img/feature3.jpg" alt="Character Customization">
-            <h3>Character Customization</h3>
-            <p>Create and personalize your hero with unique skills, weapons, and armor.</p>
-        </div>
-        <div class="feature">
-            <img src="img/feature4.jpg" alt="Epic Storyline">
-            <h3>Epic Storyline</h3>
-            <p>Unravel a compelling narrative full of intriguing characters and dramatic twists.</p>
-        </div>
-        <div class="feature">
-            <img src="img/feature5.jpg" alt="Multiplayer Quests">
-            <h3>Multiplayer Quests</h3>
-            <p>Join forces with friends and players around the world in cooperative missions.</p>
-        </div>
-        <div class="feature">
-            <img src="img/feature6.jpg" alt="Regular Updates">
-            <h3>Regular Updates</h3>
-            <p>Enjoy new content regularly to keep the adventure fresh and exciting.</p>
-        </div>
-    </div>
 
-    <section class="subscription">
-        <h2>Stay Updated</h2>
-        <form action="your_subscription_service_endpoint" method="POST" class="subscription-form">
-            <input type="email" name="email" placeholder="Enter your email" required>
+        <div class="feature f2">
+            <div class="text">
+            <h3>Build Your Legacy</h3>
+            <br>
+            <p>In the heart of a fractured realm, your town awaits your leadership.</p>
+                <br>
+                <p>Expand and fortify with strategic choices:</p>
+                <ul>
+                    <li>Unlock new features and enhance capabilities as you progress.</li>
+                    <li>Upgrade your infrastructure to boost efficiency and power.</li>
+                    <li>Construct defenses to safeguard your citizens from threats.</li><br>
+                </ul>
+
+                <p>Embrace the challenge and transform your town into a beacon of hope and resilience.</p>
+            </div>  
+            <div class="img">
+            </div>
+        </div>
+
+        <div class="feature f3">
+            <div class="img">
+            </div>
+
+            <div class="text">
+            <h3>Empower Your Forces</h3>
+            <br>
+            <p>Raise and command a formidable army in the heart of a battle-scarred kingdom. Train your soldiers to master the art of war and lead them into strategic battles. Each troop under your command is a key to your empire’s strength and survival. Elevate your army’s capabilities through rigorous training, and command them to secure victory and restore peace to the realm.</p>
+            </div>  
+        </div>
+
+        <div class="feature f4">
+            <div class="text">
+            <h3>Elevate Your Might</h3>
+            <br>
+            <p>Embark on an epic journey in Broken Kingdom, a mobile action RPG with easy-to-master controls and full RPG features. Explore the mystical world of Tyrinth, engage in thrilling battles, and uncover all the secrets with just one finger. Dive into a rich RPG adventure, perfectly suited for mobile gaming.</p>
+            </div>  
+            <div class="img">
+            </div>
+        </div>
+
+        <div class="feature f5">
+            <div class="img">
+            </div>
+
+            <div class="text">
+            <h3>Master Your Resources</h3>
+            <br>
+            <p>Take control of your journey in "Broken Kingdom" with a sophisticated inventory system. Organize and optimize your arsenal with ease. From ancient artifacts to powerful weapons and crucial supplies, everything you collect is easily accessible and manageable</p>
+            </div>  
+        </div>
+
+        <section class="subscription">
+            <div id="thx">
+            <h3>Subscription successful!<br><br>Thank you for joining our quest for glory! </h3></div>
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdPaj7DDfLiCK4uuPwxbLJNkVRuFrqjENCdRy4uHRGPrdFrMA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <h2>Stay Updated</h2>
+            <br>
+            <input type="text" name="entry.485428648" id="entry.485428648" placeholder="Enter your email" require><br><br>
             <button type="submit" class="btn-submit">Subscribe</button>
+            <br>
+            <br>
+            <p>We hate spam as much as you do. Sign up for important updates no more, no less.</p>
         </form>
-    </section>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            
+        </section>
+    </div>
 </main>
      <footer>
-        <p>© [Current Year] [Your Studio Name]. All rights reserved.</p>
+        <p>© 2024 ZOMIGAMES. All rights reserved.</p>
     </footer>
 </body>
 </html>
