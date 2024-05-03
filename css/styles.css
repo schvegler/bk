@@ -147,6 +147,13 @@ footer {
     }
 }
 
+#welcome{
+    padding: 30px;
+    color: white;
+    background-color: #ecc97f;
+    margin-bottom: 20px;
+}
+
 .feature {
     padding: 30px;
     width: 100%;
@@ -207,6 +214,7 @@ footer {
 
 .f4 .img {
     background-image: url(../img/LevelUp.png);
+
 }
 
 .f5 {
