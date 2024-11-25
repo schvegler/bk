@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcb05;
+}
+
+#hero {
+    background: url('images/aDangerousLandWide.webp') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffcb05;
+    color: #111;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#features {
+    padding-top : 50px ;
+    margin-left : auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#rights {
+    padding:10px;
+    text-align:center;
+}
+
+#rights p {
+    font-size:0.7rem;
+}
+
+.feature-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding:50px;
+}
+
+.feature-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.feature-description h3 {
+    font-size: 1.8rem;
+}
+
+#trailer {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #222;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ffcb05;
+    font-size: 1.2rem;
+}
+
+.subscription {
+    text-align: center;
+    margin: 40px;
+}
+
+hr {
+    color:#222;
+}
+
+/* Subscription Form */
+.subscription input {
+    font-size: 1em;
+    padding: 0.8rem;
+    border: 2px solid #229ebc; /* Green border */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.subscription p {
+    font-size: 14px;
+    color: #229ebc;
+}
+
+.btn-submit {
+    font-size: 1em;
+    font-weight:bold;
+    background-color: #ffcb05;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+}
