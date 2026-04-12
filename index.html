@@ -1,108 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src=js/jquery.min.js></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Broken Kingdom - A thrilling mobile action RPG">
-    <meta name="keywords" content="Mobile RPG, Action RPG, Broken Kingdom, Fantasy RPG">
-    <title>Broken Kingdom</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Broken Kingdom — ZoMi Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <img src="images/logoSmall.webp" alt="Broken Kingdom Logo" class="logo">
-            <h1>Broken Kingdom</h1>
-            <p>Step into the role of the hero the kingdom desperately prays for.</p>
-            <p></br></p>
-            <p></br></p>
-            <a href="" class="cta-button">Coming Soon</a>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Features</h2>
-        <div class="feature-card">
-            <img src="images/ChestInTownWide.webp" alt="Gameplay Screenshot" class="feature-image">
-            <div class="feature-description">
-                <h3>Epic Story</h3>
-                <p>Journey into a shattered kingdom to uncover the truth. What happened before the orc invasion that left everything in ruins? Follow King Corwin and his loyal lords as they fight to save their land and restore hope to a broken realm.</p>
-            </div>
-        </div>
-        <div class="feature-card">
-            <img src="images/OneVsManyWide.webp" alt="Battle Screenshot" class="feature-image">
-            <div class="feature-description">
-                <h3>Intense Combat</h3>
-                <p>Engage in thrilling battles featuring unique skills, powerful enemies, and intricate strategies, all controlled with intuitive one-finger simplicity.</p>
-            </div>
-        </div>
-        <div class="feature-card">
-            <img src="images/BuildingWide.webp" alt="Buildings Screenshot" class="feature-image">
-            <div class="feature-description">
-                <h3>Build and Defend</h3>
-                <p>Fortify your kingdom by constructing key structures, from training soldiers in the Barracks to reinforcing your defenses with towering Walls, preparing for the chaos ahead.</p>
-            </div>
-        </div>
-        <div class="feature-card">
-            <img src="images/ArmyWideLowRes.webp" alt="Soldiers Screenshot" class="feature-image">
-            <div class="feature-description">
-                <h3>Command Your Soldiers</h3>
-                <p>Take direct control of your trained soldiers and lead them into battle. Issue commands like Follow, Attack, and Hold Ground to strategize and outmaneuver powerful foes. Shape the battlefield with your leadership and tactical skill.</p>
-            </div>
-        </div>
-        <div class="feature-card">
-            <img src="images/DungeonWideLowRes.webp" alt="Dungeon Screenshot" class="feature-image">
-            <div class="feature-description">
-                <h3>Explore Dungeons for Riches</h3>
-                <p>Venture into treacherous dungeons filled with danger and treasure. Uncover rare loot and discover powerful weapons to enhance your strength and prepare for the battles ahead.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trailer Section -->
-    <section id="trailer">
-        <h2>Watch the Trailer</h2>
-        <div class="video-container">
-            <video muted autoplay playsinline loading="lazy" loop width="90%" controls poster="images/trailer-thumbnail.jpg">
-                <source src="images/trailer2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-<hr>
-    <section class="subscription">
-        <div id="thx">
-        <h3>Subscription successful!<br><br>Thank you for joining our quest for glory! </h3></div>
-        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdPaj7DDfLiCK4uuPwxbLJNkVRuFrqjENCdRy4uHRGPrdFrMA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-        <h2>Stay Updated</h2>
-        <br>
-        <input type="text" name="entry.485428648" id="entry.485428648" placeholder="Enter your email" require><br><br>
-        <button type="submit" class="btn-submit">Subscribe</button>
-        <br>
-        <br>
-        <p>We hate spam as much as you do. Sign up for important updates no more, no less.</p>
-    </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-        
-    </section>
-    <hr>
-    <!-- Footer Section -->
-    <footer>
-        <p>Follow us on:</p>
-        <div class="social-links">
-            <a href="https://x.com/zomi_games" target="_blank">X (Twitter)</a>
-            <a href="https://discord.gg/nfVnWHuXkY" target="_blank">Discord</a>
-        </div>
-    </footer>
-    <div id="rights">
-        <p>© 2024 ZOMIGAMES. All rights reserved.</p>
+<!-- ── HERO ── -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="images/trailer_cinematic.mp4" type="video/mp4"/>
+    <div class="hero-bg-img"></div>
+  </video>
+  <div class="hero-bg-overlay"></div>
+  <div class="particles" id="particles"></div>
+  <div class="hero-content">
+    <img class="logo-img" src="images/logo.png" alt="Broken Kingdom"/>
+    <p class="studio-label">ZoMi Games &nbsp;·&nbsp; Indie Game Studio</p>
+    <h1>Broken Kingdom</h1>
+    <p class="tagline">Mobile RPG &nbsp;·&nbsp; Medieval World &nbsp;·&nbsp; Uncover the Truth</p>
+    <div class="hero-divider"></div>
+    <p class="hero-desc">The kingdom is broken. The orcs are at the gates. Fight back in a hand-crafted mobile RPG set in a crumbling medieval world. Build your strength, lead your forces, and uncover the truth behind it all.</p>
+    <div class="cta-group">
+      <button class="btn btn-primary" onclick="openBetaModal()">Request Beta Access</button>
+      <a href="#story" class="btn btn-secondary">Discover the World</a>
     </div>
-    
+  </div>
+  <div class="scroll-hint">Explore</div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ── STATUS ── -->
+<div class="status-bar">
+  <div class="status-badge"><div class="status-dot"></div>Currently in Development</div>
+</div>
+
+<!-- ── STORY / BRASTOW ── -->
+<section class="story-section" id="story">
+  <div class="story-inner">
+    <div class="story-img">
+      <img src="images/brastow.jpg" alt="Brastow"/>
+    </div>
+    <div class="story-text">
+      <p class="section-label">The World</p>
+      <h2 class="section-title">Brastow</h2>
+      <p>Brastow was once a quiet settlement on the western edge of the kingdom. It is quiet still, but not by choice. When the orc advance reached the river, the decision was made to break the west bridge. No army came to help. No word from the king followed.</p>
+      <p>Brastow has been on its own ever since. Cut off from the kingdom it once served, surviving day by day behind walls that were never meant to hold against what now waits beyond them.</p>
+      <blockquote class="story-quote">"A huge orc army is stationed at the broken bridge. Nothing crosses. Not yet."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ── CHARACTERS ── -->
+<section class="characters-section" id="characters">
+  <div class="characters-inner">
+    <p class="section-label">The People of Brastow</p>
+    <h2 class="section-title">Characters</h2>
+    <div class="char-grid">
+
+      <!-- Sir Baldwin -->
+      <div class="char-card wide">
+        <div class="char-img">
+          <img src="images/baldwin.jpg" alt="Sir Baldwin"/>
+        </div>
+        <div class="char-body">
+          <p class="char-role">King Corvin's Right Hand</p>
+          <h3 class="char-name">Sir Baldwin</h3>
+          <p class="char-desc">King Corvin's right hand does not sit in a throne room. He sits in Brastow, stranded like everyone else, doing what he was trained to do: keeping order, keeping hope, keeping people alive. Sir Baldwin carries the weight of the crown's authority in a place the crown can no longer reach. He has not given up. He is not sure he is allowed to.</p>
+        </div>
+      </div>
+
+      <!-- Sgt. Brant -->
+      <div class="char-card">
+        <div class="char-img" style="max-height:220px; overflow:hidden;">
+          <img src="images/francis.jpg" alt="Sgt. Brant" style="object-position:center top;"/>
+        </div>
+        <div class="char-body">
+          <p class="char-role">Town Guard</p>
+          <h3 class="char-name">Sgt. Brant</h3>
+          <p class="char-desc">Nothing enters Brastow. Nothing leaves. Not without Sgt. Brant knowing about it. He has stood at that gate through cold nights and worse mornings. He intends to keep standing there.</p>
+        </div>
+      </div>
+
+      <!-- The Orcs -->
+      <div class="char-card full">
+        <div class="char-img">
+          <img src="images/orcs.jpg" alt="The Orcs"/>
+        </div>
+        <div class="char-body">
+          <p class="char-role">The Enemy</p>
+          <h3 class="char-name">The Orcs</h3>
+          <p class="char-desc">They came in numbers no one had planned for. They take what they find: food, tools, ground, without negotiation and without restraint. By all accounts, Brastow should already be gone. And yet the final push never comes. Something holds them back. Something they haven't named, maybe can't name. The orcs are afraid. Of what, nobody in Brastow knows. But they've learned to be grateful for it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section class="gallery-section" id="world">
+  <div class="gallery-inner">
+    <p class="section-label">The World</p>
+    <h2 class="section-title">A Kingdom in Ruins</h2>
+    <p class="section-sub" style="text-align:center; margin: 0 auto 1.5rem;">From fog-drenched island wilds to lantern-lit village squares and molten lava caves. Broken Kingdom is a world worth getting lost in.</p>
+    <div class="gallery-tabs">
+      <button class="tab-btn active" onclick="showTab('town', this)">Town</button>
+      <button class="tab-btn" onclick="showTab('dungeon', this)">Dungeons</button>
+      <button class="tab-btn" onclick="showTab('lava', this)">Lava Caves</button>
+      <button class="tab-btn" onclick="showTab('enemies', this)">Enemies</button>
+    </div>
+
+    <div class="gallery-grid active" id="tab-town">
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/town1.jpg" alt="Town campfire"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/town2.jpg" alt="Town soldiers"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/town3.jpg" alt="Town mill"/></div>
+    </div>
+
+    <div class="gallery-grid" id="tab-dungeon">
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/dungeon1.jpg" alt="Dungeon"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/dungeon2.jpg" alt="Dungeon 2"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/dungeon3.jpg" alt="Dungeon 3"/></div>
+    </div>
+
+    <div class="gallery-grid" id="tab-lava">
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/lava1.jpg" alt="Lava cave"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/lava2.jpg" alt="Lava cave tree"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/lava3.jpg" alt="Old mine lava cave"/></div>
+    </div>
+
+    <div class="gallery-grid two-col" id="tab-enemies">
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/orc1.jpg" alt="Orc taunt"/></div>
+      <div class="gal-item" onclick="openLightbox(this)"><img src="images/orcs.jpg" alt="Orc town"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section class="features-section" id="features">
+  <div class="features-inner">
+    <p class="section-label">Features</p>
+    <h2 class="section-title">What Sets It Apart</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚔️</div>
+        <div class="feature-title">Action Combat</div>
+        <p class="feature-text">Intuitive controls built for portrait mode. Equip different weapons and armors. Your loadout shapes how every fight plays out.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <div class="feature-title">Skills</div>
+        <p class="feature-text">Learn and master a growing set of skills as you level up. Shape your own playstyle and adapt to whatever the world throws at you.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗺️</div>
+        <div class="feature-title">Open World</div>
+        <p class="feature-text">A handcrafted island world with hidden paths, scattered secrets, and a story that reveals itself the further you venture.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏪</div>
+        <div class="feature-title">Towns & Quests</div>
+        <p class="feature-text">Visit shops, pick up quests, and talk to the people trying to hold on to what's left of a normal life.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <div class="feature-title">Day & Night</div>
+        <p class="feature-text">When darkness falls, so does safety. The night belongs to things best left unencountered. You've been warned.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GAMEPLAY ── -->
+<section class="gameplay-section" id="gameplay">
+  <div class="gameplay-inner">
+    <div class="gameplay-text">
+      <p class="section-label">Gameplay</p>
+      <h2 class="section-title">Built for Mobile. Crafted for Depth.</h2>
+      <p>Joystick controls that feel natural from the first minute, paired with RPG depth that keeps you coming back. Whether in a torch-lit dungeon or an open field at dusk, Broken Kingdom belongs in your hands.</p>
+      <button class="btn btn-secondary" onclick="openBetaModal()">Request Beta Access</button>
+    </div>
+    <div class="gameplay-screens">
+      <div class="gameplay-screen">
+        <video controls playsinline preload="metadata" poster="images/gameplay.jpg">
+          <source src="images/trailer_gameplay.mp4" type="video/mp4"/>
+          <img src="images/gameplay.jpg" alt="Gameplay"/>
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ── -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <p class="section-label">Stay in the Loop</p>
+    <h2 class="section-title">Follow the Journey</h2>
+    <p class="newsletter-sub">Broken Kingdom is still being forged. Subscribe to get development updates, early access invites, and the occasional behind-the-scenes look straight from the developer.</p>
+
+    <div id="newsletter-form-wrap">
+      <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdPaj7DDfLiCK4uuPwxbLJNkVRuFrqjENCdRy4uHRGPrdFrMA/formResponse?"
+        target="hidden_iframe" onsubmit="handleGFormSubmit();">
+
+        <div class="gform-field">
+          <label for="entry.1999770481">Your Name</label>
+          <input type="text" name="entry.1999770481" id="entry.1999770481" placeholder="John Smith" required/>
+        </div>
+
+        <div class="gform-field">
+          <label for="entry.485428648">Email Address</label>
+          <input type="text" name="entry.485428648" id="entry.485428648" placeholder="your@email.com" required/>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">Subscribe</button>
+        <p class="newsletter-note">No spam. Unsubscribe whenever you like.</p>
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </div>
+
+    <div id="newsletter-success" style="display:none;">
+      <p class="newsletter-success-msg">✓ &nbsp;You're in! We'll keep you posted on Broken Kingdom's journey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-section">
+  <p class="section-label">Get in Touch</p>
+  <h2 class="section-title">Press & Publishers</h2>
+  <p>Publishers, press, or just curious. Reach out directly.</p>
+  <a href="mailto:thomas@zomigames.com" class="contact-email">thomas@zomigames.com</a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 <span>ZoMi Games</span> · Thomas Schvegler · All rights reserved</p>
+</footer>
+
+<!-- ── BETA MODAL ── -->
+<div class="modal-overlay" id="betaModal" onclick="closeBetaOnOverlay(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeBetaModal()">✕</button>
+    <div id="modal-form-content">
+      <h3>Request Beta Access</h3>
+      <p>Share a few details and I'll reach out when the next beta round opens.</p>
+      <div class="modal-field"><label>Your Name</label><input type="text" id="beta-name" placeholder="John Smith"/></div>
+      <div class="modal-field"><label>Email Address</label><input type="email" id="beta-email" placeholder="your@email.com"/></div>
+      <div class="modal-field">
+        <label>Device</label>
+        <select id="beta-device">
+          <option value="">Select your device</option>
+          <option>iPhone</option>
+          <option>iPad</option>
+          <option>Android Phone</option>
+          <option>Android Tablet</option>
+        </select>
+      </div>
+      <div class="modal-field"><label>Why do you want to test? (optional)</label><textarea id="beta-why" placeholder="I love RPGs and..."></textarea></div>
+      <button class="btn btn-primary modal-submit" onclick="submitBeta()">Send Request</button>
+    </div>
+    <div id="modal-success-content" class="modal-success" style="display:none;">
+      <div class="checkmark">⚔️</div>
+      <h3>Request Received!</h3>
+      <p>Your request is noted. I'll be in touch when the next round of testing opens up.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt=""/>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
