@@ -55,7 +55,7 @@ body { background: var(--navy); color: var(--white); font-family: 'Lato', sans-s
   to   { opacity: 1; transform: translateY(0); }
 }
 .logo-img {
-  width: 110px; height: 110px; border-radius: 22%;
+  width: 110px; height: 110px; border-radius: 25%;
   background: #0b1e2d;
   box-shadow: 0 0 50px rgba(75,191,207,0.3), 0 0 20px rgba(245,166,35,0.2);
   animation: fade-in-up 1s 0.1s ease both;
