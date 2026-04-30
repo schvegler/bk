@@ -27,10 +27,23 @@
     <div class="cta-group">
       <button class="btn btn-primary" onclick="openBetaModal()">Request Beta Access</button>
       <a href="#story" class="btn btn-secondary">Discover the World</a>
+      <button class="btn-trailer" onclick="openTrailer()">
+        <span class="btn-trailer-icon">▶</span> Watch Trailer
+      </button>
     </div>
   </div>
   <div class="scroll-hint">Explore</div>
 </section>
+
+<!-- ── TRAILER LIGHTBOX ── -->
+<div class="trailer-overlay" id="trailerOverlay" onclick="closeTrailerOnOverlay(event)">
+  <div class="trailer-box">
+    <button class="trailer-close" onclick="closeTrailer()">✕</button>
+    <video id="trailer-video" controls playsinline preload="none">
+      <source src="images/trailer_cinematic.mp4" type="video/mp4"/>
+    </video>
+  </div>
+</div>
 
 <!-- ── STATUS ── -->
 <div class="status-bar">

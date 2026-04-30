@@ -88,7 +88,27 @@ function submitBeta() {
   document.getElementById('modal-success-content').style.display = 'block';
 }
 
+// ── TRAILER LIGHTBOX ──
+function openTrailer() {
+  const overlay = document.getElementById('trailerOverlay');
+  const video = document.getElementById('trailer-video');
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  video.play();
+}
+function closeTrailer() {
+  const overlay = document.getElementById('trailerOverlay');
+  const video = document.getElementById('trailer-video');
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  video.pause();
+  video.currentTime = 0;
+}
+function closeTrailerOnOverlay(e) {
+  if (e.target === document.getElementById('trailerOverlay')) closeTrailer();
+}
+
 // ── KEYBOARD SHORTCUTS ──
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeBetaModal(); closeLightbox(); }
+  if (e.key === 'Escape') { closeBetaModal(); closeLightbox(); closeTrailer(); }
 });
